@@ -1,0 +1,100 @@
+[
+  {
+    "description": "    I need to automate https://www.saucedemo.com/ ",
+    "keyword": "Feature",
+    "name": "SWAGLABS",
+    "line": 2,
+    "id": "swaglabs",
+    "tags": [],
+    "uri": "features\\addingProducts.feature",
+    "elements": [
+      {
+        "id": "swaglabs;add-products-to-the-cart",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Add products to the cart",
+        "tags": [
+          {
+            "name": "@RegressionTesting",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "access the swaglabs application in his web browser",
+            "match": {
+              "location": "stepDefinitions\\addinproduct.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "add the products",
+            "match": {
+              "location": "stepDefinitions\\addinproduct.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3747000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can see the products at the cart",
+            "match": {
+              "location": "stepDefinitions\\addinproduct.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
